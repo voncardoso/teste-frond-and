@@ -99,48 +99,7 @@ export function Home(){
                 Vokalia and Consonantia, there live the blind texts.
             </p>
 
-            <ul>
-                <li>
-                    <img src="" alt="" />
-                    <div>
-                        <h4></h4>
-                        <div>
-                            <img src={BlocoImg1} alt="" />
-                            <span>Kevin Ibrahim</span>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                <img src={BlocoImg2} alt="" />
-                    <div>
-                        <h4></h4>
-                        <div>
-                            <img src="" alt="" />
-                            <span> Mike Jackson</span>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                <img src={BlocoImg3} alt="" />
-                    <div>
-                        <h4></h4>
-                        <div>
-                            <img  alt="" />
-                            <span> Bryan McGregor</span>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                <img src={BlocoImg4} alt="" />
-                    <div>
-                        <h4></h4>
-                        <div>
-                            <img src="" alt="" />
-                            <span>Jason Ryan</span>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+           
             </OurBlog>
         </Container>
     )

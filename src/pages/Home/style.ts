@@ -103,7 +103,7 @@ export const Intro = styled.section`
         }
    }
 
-   @media (max-width: 1186px){
+   @media (max-width: 1205px){
         img {
             max-width: 650px;
             width: 100%;
