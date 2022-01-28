@@ -2,7 +2,7 @@ import { IconContext } from "react-icons";
 import { Container, Intro, BestRecipes, BestServices, OurBlog  } from "./style";
 import { AiOutlineSearch } from "react-icons/ai";
 import { Header } from '../../components/header';
-import IllustrationIMg from '../../assets/Illustration.svg';
+import IllustrationIMg from '../../assets/Illustration.png';
 import ComigaImg1 from '../../assets/comida_1.svg';
 import ComigaImg2 from '../../assets/comida_2.svg';
 import ComigaImg3 from '../../assets/comida_3.svg';
@@ -37,7 +37,7 @@ export function Home(){
             </Intro >
 
             <BestRecipes>
-                <h2>Our Best Recipes</h2>
+                <h2 className="H2Text">Our Best Recipes</h2>
                 <p>Far far away, behind the word mountains, far from the countries
                 Vokalia and Consonantia, there live the blind texts.</p>
                 <ul>
@@ -74,7 +74,7 @@ export function Home(){
             <BestServices>
                 <img src={Services} alt="" />
                 <div>
-                    <h2>The best services ready To serve you</h2>
+                    <h2 className="H2Text">The best services ready To serve you</h2>
                     <p>
                         Far far away, behind the word mountains, far from
                         the countries Vokalia and Consonantia, there live the
@@ -93,7 +93,7 @@ export function Home(){
             </BestServices>
 
             <OurBlog>
-            <h2>Red Our Blog</h2>
+            <h2 className="H2Text">Red Our Blog</h2>
             <p>
                 Far far away, behind the word mountains, far from the countries
                 Vokalia and Consonantia, there live the blind texts.

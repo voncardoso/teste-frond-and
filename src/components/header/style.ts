@@ -107,6 +107,7 @@ export const Container = styled.header`
 
    @media (max-width: 918px){
     nav{
+
             h2{
                 font-size: 1.625rem;
                 color: #BADC58;
@@ -129,6 +130,42 @@ export const Container = styled.header`
                     color: rgba(255,255,255, 0.5);
                 }
             }
+        }
+    }
+
+    @media (max-width: 748px){
+        top: 0px;
+        nav{
+            max-width: 672px;
+            h2{
+                font-size: 1.375rem;
+            }
+            ul{
+             
+                li{
+                    font-size: 0.625rem;
+                }
+                li:hover{
+                    color: rgba(255,255,255, 0.5);
+                }
+            }
+        }
+        img{
+            height: 500px;
+            width: 400px;
+        }
+        .buttonRegister{
+            padding: 5px 15px;
+            background: #FFFFFF;
+            color: #BADC58;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    }
+
+    @media (max-width: 748px){
+        nav{
+            display: none;
         }
     }
 `

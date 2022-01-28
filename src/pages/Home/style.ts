@@ -42,7 +42,7 @@ export const Intro = styled.section`
                 border-radius: 5px;
                 border: none;
                 background: none;
-                top: 2.8px;
+                top: 2px;
                 align-self: center;
             }
         
@@ -79,7 +79,7 @@ export const Intro = styled.section`
     }
 
     @media (max-width: 1350px){
-        width: 100vw;
+        margin: 0 auto;
         .IntroText{
             max-width: 450px;
             h1{
@@ -107,6 +107,7 @@ export const Intro = styled.section`
         img {
             max-width: 650px;
             width: 100%;
+            top: -50px;
         }
    }
 
@@ -208,6 +209,155 @@ export const Intro = styled.section`
             width: 440px;
         }
    }
+
+   @media (max-width: 748px){
+       margin-top: 0px;
+        .IntroText{
+            margin-left: -8px;
+            h1{
+                margin-top: -50px;
+                font-size: 2rem;
+                width: 170px;
+            }
+            
+            
+            div{
+                input{
+                    width: 150px;
+                    height: 25px;
+                    font-size: 0.75rem;
+                }
+
+            }
+        }
+        img{
+            width: 450px;
+            height: 400px;
+        }
+        .Search-button{
+            font-size: 0.75rem;
+            top: 9px;
+            padding: 10px;
+            border-radius: 5px;
+    }
+    }
+
+    @media (max-width: 689px){
+        img{
+            width: 400px;
+            height: 350px;
+        }
+    }
+
+    @media (max-width: 639px){
+        img{
+            margin-top: 40px;
+            left: 20px;
+            width: 340px;
+            height: 300px;
+        }
+    }
+
+    @media (max-width: 579px){
+        .IntroText{
+            position: relative;
+            z-index: 20;
+            margin-left: -8px;
+            h1{
+                margin-top: -50px;
+                font-size: 1.625rem;
+                width: 150px;
+            }
+            
+            div{
+                input{
+                    width: 120px;
+                    height: 20px;
+                    font-size: 0.75rem;
+                    border-radius: 4px;
+                }
+
+            }
+        }
+        img{
+            position: relative;
+            right: 30px;
+            width: 320px;
+            height: 280px;
+        }
+        .Search-button{
+            font-size: 0.75rem;
+            top: 8px;
+            padding: 8px;
+            border-radius: 5px;
+    }
+    }
+
+    @media (max-width: 530px){
+        .IntroText{
+            position: relative;
+            z-index: 20;
+            margin-top: 60px;
+            h1{
+
+            }
+            div{
+                position: relative;
+                z-index: 30;
+                width: 220px;
+                input{
+
+                    
+                }
+            }
+        }
+        img{
+            position: relative;
+            top: -40px;
+            width: 350px;
+            height: 300px;
+            left: -10px;
+            z-index: 40;
+        }
+    }
+
+
+    @media (max-width: 428px){
+        .IntroText{
+            margin-top: 20px;
+            left: 10px;
+            h1{
+                font-size: 1.25rem;
+                margin-left: 20px;
+                width: 100px;
+            }
+            div{
+                input{
+                    margin-top:5px;
+                margin-left: 20px;
+                width: 90px;
+                height: 15px;
+                font-size: 8px;
+                
+            }
+            }
+        }
+        img{
+            position: relative;
+            top: -40px;
+            left: -50px;
+            width: 260px;
+            height: 200px;
+
+        }
+        .Search-button{
+            font-size: 0.75rem;
+            top: 5px;
+            padding: 5px;
+            border-radius: 3px;
+    }
+    }
+
 `;
 
 export const BestRecipes = styled.section`
@@ -231,18 +381,20 @@ export const BestRecipes = styled.section`
     }
 
     ul{
-        max-width: 1277px;
-        min-width: 200px;
+        width: 100%;
         margin: 0 auto;
         list-style: none;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-flow: row;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
         margin-top: 40px;
         padding-bottom: 60px;
         li{
-            max-width: 618px;
-            min-width: 200px;
+            max-width: 600px;
+            width: 100%;
+            min-width: 250px;
             background: #FFFFFF;
             box-shadow: 5px 5px 15px 0px rgb(44, 44, 44, 0.15);
             margin-left: 20px;
@@ -254,9 +406,6 @@ export const BestRecipes = styled.section`
             img{
                 display: block;
                 max-width: 280px;
-                max-height: 280px;
-                min-width: 100px;
-                min-height: 100px;
                 width: 100%;
             }
             div{
@@ -290,12 +439,84 @@ export const BestRecipes = styled.section`
             }
         }
     }
+   @media (max-width: 918px){
+            h2{
+               font-size: 2.255rem;
+           }
+
+           ul{
+                li{
+                    max-width: 500px;
+                    min-width: 200px;
+                    height: 180px;
+                    width: 100%;
+                    img{
+                        margin-top: 0px;
+                        display: block;
+                        max-width: 200px;
+                        max-height: 200px;
+                        height: 100%;
+                        width: 100%;
+                    }
+                    div{
+                        width: 220px;
+                        height: 180px;
+                        align-self: center;
+                        h3{
+                            font-size: 2rem;
+                            margin-top: 15%;
+                            margin-bottom: 25px;
+                            align-self: center;
+                        }
+          
+                            a {
+                                background: #BADC58;
+                                text-decoration: none;
+                                padding: 10px 20px;
+                                font-size: 1.25rem;
+                                font-weight: normal;
+                                color: #FFFFFF;
+                                border-radius: 5px;
+
+                            }
+                            a:hover{
+                                font-size: 20px;
+                                font-size: 1.375rem;
+                                padding: 8px 18px;
+                                background: #FFFFFF;
+                                color: #B9DB58;
+                                border: solid 2px #B9DB58;
+                            }
+                        }
+                  }
+                  .H2Text{
+                        margin-top: 40px;
+                        width: 350px;
+                        font-size: 2.125rem;
+                }
+            }
+   }
+
+   @media (max-width: 818px){
+
+           h2{
+               font-size: 2.255rem;
+           }
+   }
+  
 `;
 
 
 export const BestServices = styled.section`
+    max-width: 1570px;
     display: flex;
     margin: 0 auto;
+    img{
+        max-width: 726px;
+        min-width: 100px;
+        display: block;
+        width: 100%;
+    }
     div{
         align-self: center;
         max-width: 450px;
@@ -338,6 +559,35 @@ export const BestServices = styled.section`
         }
     }
 
+   @media (max-width: 918px){
+       img{
+           height: 500px;
+           border: none;
+       }
+    .H2Text{
+        margin-top: 40px;
+        width: 350px;
+        font-size: 2.125rem;
+        margin-bottom: 10px;
+   }
+   div{
+       margin-top: -75px;
+        p{
+            font-size: 1rem;   
+            letter-spacing: 0.5px;
+            line-height: 30px;
+            margin: 10px auto;
+        }
+
+        a {
+            position: relative;
+            top: 20px;
+            font-size: 1rem;
+
+        }
+   }
+
+   }
 `;
 
 export const OurBlog = styled.section`
