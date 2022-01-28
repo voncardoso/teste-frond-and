@@ -98,14 +98,14 @@ export const Intro = styled.section`
         }
         }
         img {
-            max-width: 800px;
+            max-width: 740px;
             width: 100%;
         }
    }
 
    @media (max-width: 1205px){
         img {
-            max-width: 650px;
+            max-width: 635px;
             width: 100%;
             top: -50px;
         }
@@ -150,31 +150,21 @@ export const Intro = styled.section`
    }
 
    @media (max-width: 1041px){
+    .IntroText{
+        margin-left: 20px;
+    }
         img{
             width: 550px;
         }
+        .Search-button:hover{
+            font-size: 18px;
+            padding: 9.5px;
+        } 
    }
+     
 
-   @media (max-width: 918px){
-       
-       .IntroText{
-        margin-left: 0px;
-           h1{
-               width: 250px;
-               font-size: 2.875rem;
-           }
-           div{
-            input{
-               width: 240px;
-            }
-           }
-       }
-        img{
-            width: 520px;
-        }
-   }
 
-   @media (max-width: 918px){
+   @media (max-width: 939px){
     .IntroText{
         margin-left: 0px;
            h1{
@@ -190,6 +180,10 @@ export const Intro = styled.section`
         img{
             width: 480px;
         }
+        .Search-button:hover{
+            font-size: 18px;
+            padding: 9.5px;
+        } 
    }
 
    @media (max-width: 818px){
@@ -208,6 +202,10 @@ export const Intro = styled.section`
         img{
             width: 440px;
         }
+        .Search-button:hover{
+            font-size: 18px;
+            padding: 9.5px;
+        } 
    }
 
    @media (max-width: 748px){
@@ -240,6 +238,10 @@ export const Intro = styled.section`
             padding: 10px;
             border-radius: 5px;
     }
+    .Search-button:hover{
+            font-size: 10px;
+            padding: 8.5px;
+        } 
     }
 
     @media (max-width: 689px){
@@ -247,6 +249,10 @@ export const Intro = styled.section`
             width: 400px;
             height: 350px;
         }
+        .Search-button:hover{
+            font-size: 10px;
+            padding: 8.5px;
+        } 
     }
 
     @media (max-width: 639px){
@@ -256,6 +262,10 @@ export const Intro = styled.section`
             width: 340px;
             height: 300px;
         }
+        .Search-button:hover{
+            font-size: 10px;
+            padding: 8px;
+        } 
     }
 
     @media (max-width: 579px){
@@ -287,13 +297,17 @@ export const Intro = styled.section`
         }
         .Search-button{
             font-size: 0.75rem;
-            top: 8px;
+            top: 7px;
             padding: 8px;
             border-radius: 5px;
     }
+    .Search-button:hover{
+            font-size: 8px;
+            padding: 7.6px;
+        } 
     }
 
-    @media (max-width: 530px){
+    @media (max-width: 531px){
         .IntroText{
             position: relative;
             z-index: 20;
@@ -310,6 +324,7 @@ export const Intro = styled.section`
                     
                 }
             }
+
         }
         img{
             position: relative;
@@ -319,6 +334,12 @@ export const Intro = styled.section`
             left: -10px;
             z-index: 40;
         }
+
+        .Search-button:hover{
+            font-size: 8px;
+            padding: 7.6px;
+        } 
+  
     }
 
 
@@ -334,11 +355,12 @@ export const Intro = styled.section`
             div{
                 input{
                     margin-top:5px;
-                margin-left: 20px;
-                width: 90px;
-                height: 15px;
-                font-size: 8px;
-                
+                    margin-left: 20px;
+                    width: 90px;
+                    height: 15px;
+                    font-size: 8px;
+                    border-radius: 2.5px;
+                    border: 0.10px solid #000000;
             }
             }
         }
@@ -352,10 +374,15 @@ export const Intro = styled.section`
         }
         .Search-button{
             font-size: 0.75rem;
-            top: 5px;
-            padding: 5px;
+            top: 3px;
+            padding: 4px;
             border-radius: 3px;
+            margin-left: 5px;
     }
+        .Search-button:hover{
+            font-size: 5px;
+            padding: 4px;
+        }   
     }
 
 `;

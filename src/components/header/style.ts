@@ -61,24 +61,29 @@ export const Container = styled.header`
         }
     
     @media (max-width: 1350px){
+        top: 15px;
          nav{
-            max-width: 1100px;
+            max-width: 1110px;
          }
    }
 
 
-   @media (max-width: 1200px){
+   @media (max-width: 1205px){
+       top: 15px;
          nav{
-            max-width: 1100px;
+        
+            max-width: 1012px;
          }
    }
    @media (max-width: 1186px){
+    top: 10px;
          nav{
              margin-top: 10px;
             max-width: 1000px;
          }
    }
    @media (max-width: 1080px){
+       top: 10px;
     nav{
              margin-top: 10px;
             max-width: 960px;
@@ -86,13 +91,6 @@ export const Container = styled.header`
    }
 
    @media (max-width: 1041px){
-    nav{
-             margin-top: 10px;
-            max-width: 870px;
-         }
-    }
-
-   @media (max-width: 1005px){
         display: flex;
         justify-content: center;
         top: 10px;
