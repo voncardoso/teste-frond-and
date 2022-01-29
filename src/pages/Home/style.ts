@@ -671,6 +671,7 @@ export const BestServices = styled.section`
 `;
 
 export const OurBlog = styled.section`
+    max-width: 1575px;
     margin: 0 auto;
     background: #FAFAFC;
     h2{
@@ -693,38 +694,65 @@ export const OurBlog = styled.section`
     }
 
     ul{
-        max-width: 1577px;
-        min-width: 300px;
-        margin-left: 112px;
-        width: 100%;
-        list-style: none;
+        max-width: 1575px;
         display: flex;
-        justify-content: center;
-        margin-top: 40px;
-        padding-bottom: 60px;
+        justify-content: flex-start;
+        list-style: none;
         position: relative;
         overflow: auto;
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
-        
+        margin-left: 10%;
+        margin-top: 30px;
         li{
-            margin-left: 30px;
+            margin-left: 15px;
+            margin-bottom: 60px;
             background: #FFFFFF;
+            box-shadow: 5px 5px 15px 0px rgb(44, 44, 44, 0.15);
+            border-radius: 8px;
+            img{
+                max-width: 348px;
+                min-width: 40px;
+            }
+            .divContainer{
+                margin-left: 20px;
+                margin-right: 20px;
+              h5{
+                  max-width: 240px;
+                  margin-top: 20px;
+                  font-size: 1.75rem;
+              }  
+              div{
+                display: flex;
+                justify-content: flex-start;
+                align-items:center;
+                height: 70px;
+                padding-bottom: 20px;
+                  img{
+                      width: 45px;
+                      border-radius: 100%;
+                    }
+                  strong{
+                      margin-left: 5px;
+                      color: #9D9AAF;
+                      font-weight: normal;
+                    }
+              }
+            }
+
         }
     }
 
-    ul::after{
-        content: '→';
-        position: absolute;
-        padding: 10px 12px;
-        background: #FFFFFF;
-        border-radius: 50%;
-        font-weight: bold;
-        top: 230px;
-        right: 140px;
-        color: #B9DB58;
-        animation: seta .5s ease-in 0s infinite alternate; /* fazer funcionar a animação */
-    }
-
+   .Search-Seta{
+       position: relative;
+       top: -260px;
+       left: 95%;
+       z-index: 40;
+       align-self: flex-end;
+       color: #B9DB58;
+       padding: 10px 10px;
+       background: #FFFFFF;
+       border-radius: 100%;
+   }
 
 `;

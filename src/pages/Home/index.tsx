@@ -1,6 +1,6 @@
 import { IconContext } from "react-icons";
 import { Container, Intro, BestRecipes, BestServices, OurBlog  } from "./style";
-import { AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineSearch, AiOutlineArrowRight } from "react-icons/ai";
 import { Header } from '../../components/header';
 import IllustrationIMg from '../../assets/Illustration.png';
 import ComigaImg1 from '../../assets/comida_1.svg';
@@ -109,7 +109,53 @@ export function Home(){
                 Far far away, behind the word mountains, far from the countries
                 Vokalia and Consonantia, there live the blind texts.
             </p>
+                    
+            <ul>
+                <li>
+                    <img src={BlocoImg1} alt="" />
+                    <div className="divContainer">
+                        <h5>Quick-start guide to nuts and seeds</h5>
+                        <div>
+                            <img src={ComigaImg1}  alt="" />
+                            <strong>Kevin Ibrahim</strong>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src={BlocoImg1} alt="" />
+                    <div className="divContainer">
+                        <h5>Quick-start guide to nuts and seeds</h5>
+                        <div>
+                            <img src={ComigaImg1}  alt="" />
+                            <strong>Kevin Ibrahim</strong>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src={BlocoImg1} alt="" />
+                    <div className="divContainer">
+                        <h5>Quick-start guide to nuts and seeds</h5>
+                        <div>
+                            <img src={ComigaImg1} alt="" />
+                            <strong>Kevin Ibrahim</strong>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src={BlocoImg1} alt="" />
+                    <div className="divContainer">
+                        <h5>Quick-start guide to nuts and seeds</h5>
+                        <div>
+                            <img src={ComigaImg1} alt="" />
+                            <strong>Kevin Ibrahim</strong>
+                        </div>
+                    </div>
+                </li>
 
+            </ul>
+            <IconContext.Provider value={{className: "Search-Seta" }}>
+                <AiOutlineArrowRight/>
+            </IconContext.Provider>
            
             </OurBlog>
         </Container>
