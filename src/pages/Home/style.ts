@@ -392,11 +392,23 @@ export const Intro = styled.section`
         }   
     }
 
-    @media (max-width: 375px){
+    @media (max-width: 378px){
         img{
             width: 240px;
             height: 180px;
         }
+        .Search-button{
+            font-size: 0.75rem;
+            top: 3px;
+            padding: 3.6px;
+            border-radius: 3px;
+            margin-left: 5px;
+    }
+    .Search-button:hover{
+            font-size: 0.75rem;
+            top: 2.8px;
+            padding: 1.5px;
+        }  
     }
 `;
 
@@ -499,6 +511,32 @@ export const BestRecipes = styled.section`
         }
 
     }
+
+    @media (max-width: 450px){
+        li{
+            width: 300px;
+            width: 100%;
+            height: 120px;
+
+            img{
+                position: relative;
+                right: 5px;
+            }
+
+            div{
+                div{
+                    width: 120px;
+                    height: 80px;
+                    margin: 10px auto 10px auto;
+                }
+            }
+        }
+    }
+    @media (max-width: 430px){
+        .divInterna{
+            margin-top: 2vh;
+        }
+    }
 `;
 
 
@@ -514,6 +552,7 @@ export const BestServices = styled.section`
         display: block;
         width: 100%;
     }
+
     div{
         max-width: 300px;
         min-width: 200px;
@@ -609,6 +648,7 @@ export const BestServices = styled.section`
     img{
         display: none;
     }
+    
 
     div{
         padding: 60px;

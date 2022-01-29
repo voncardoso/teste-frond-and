@@ -44,7 +44,7 @@ export function Home(){
                     <li>
                         <img src={ComigaImg1} alt="Broccoli" />
                         <div>
-                            <div>
+                            <div className="divInterna">
                                 <h3>Broccoli Salad with Bacon</h3>
                                 <button>See Recipe</button>
                             </div>
@@ -54,7 +54,7 @@ export function Home(){
                     <li>
                         <img src={ComigaImg2} alt="Burgrs" />
                         <div>
-                            <div>
+                            <div className="divInterna">
                                 <h3>Classic Beef Burgers</h3>
                                 <button>See Recipe</button>
                             </div>
@@ -64,7 +64,7 @@ export function Home(){
                     <li>
                         <img src={ComigaImg3} alt="Salad" />
                         <div>
-                            <div>
+                            <div className="divInterna">
                                 <h3>Classic Potato Salad</h3>
                                 <button>See Recipe</button>
                             </div>
@@ -73,7 +73,7 @@ export function Home(){
                     <li>
                         <img src={ComigaImg4} alt="Cherry Cobbler" />
                         <div>
-                            <div>
+                            <div className="divInterna">
                                 <h3>Cherry Cobbler on the Grill</h3>
                                 <button>See Recipe</button>
                             </div>
