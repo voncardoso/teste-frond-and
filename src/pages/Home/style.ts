@@ -321,18 +321,17 @@ export const Intro = styled.section`
                 position: relative;
                 z-index: 30;
                 width: 220px;
-                input{
-
-                    
+                input{  
                 }
             }
 
         }
+
         img{
             position: relative;
             top: -40px;
-            width: 350px;
-            height: 300px;
+            width: 320px;
+            height: 310px;
             left: -10px;
             z-index: 40;
         }
@@ -344,6 +343,12 @@ export const Intro = styled.section`
   
     }
 
+    @media (max-width: 504px){
+        img{
+            width: 340px;
+            height: 340px;
+        }
+    }
 
     @media (max-width: 428px){
         .IntroText{
@@ -387,23 +392,21 @@ export const Intro = styled.section`
         }   
     }
 
-    @media (max-width: 428px){
-        width: 100vw;
+    @media (max-width: 375px){
         img{
-            width: 220px;
+            width: 240px;
             height: 180px;
         }
     }
-
 `;
 
 export const BestRecipes = styled.section`
     background: #FAFAFC;
     color: #1D164D;
     margin: 0 auto;
-    width: 100vw;
+    max-width: 1575px;
     h2{
-        font-size: min(2.5rem, 4vw);
+        font-size: min(2.5rem, 5vw);
         text-align: center;
         padding-top: 60px;
     }
@@ -411,7 +414,10 @@ export const BestRecipes = styled.section`
         text-align: center;
         font-size: min(1.25em, 2.5vw);
         font-weight: normal;
+        padding-right: 40px;
+        padding-left: 40px;
         max-width: 580px;
+        min-width: 100px;
         letter-spacing: 0.5px;
         line-height: min(30px, 4vw);
         margin: 10px auto;
@@ -423,7 +429,7 @@ export const BestRecipes = styled.section`
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 60px;
+        padding: min(60px, 10vw);
        li{  
            display: flex;
            max-width: 500px;
@@ -440,9 +446,13 @@ export const BestRecipes = styled.section`
             height: 100%;
              div{
                  max-width: 200px;
+                 min-width: 100px;
+                 width: 100%;
                  max-height: 128px;
                  align-self: center;
                  margin: 4vh auto 4vh auto;
+                 padding-left: 5px;
+                 
                 h3{
                    display: flex;
                    max-width: 200px;
@@ -453,7 +463,7 @@ export const BestRecipes = styled.section`
                     padding: 8px 16px;
                     margin: 10px auto 0px auto;
                     background: #BADC58;
-                    font-size: 1rem;
+                    font-size: min(1rem, 3vw);
                     color: #FFFFFF;
                     border: none;
                     border-radius: 5px;
@@ -470,17 +480,31 @@ export const BestRecipes = styled.section`
            }
             img{
                 max-width: 200px;
-                min-width: 100px;
+                min-width: 140px;
                 width: 100%;
                 
             }
        }
-    }                 
+    }    
+    
+    @media (max-width: 604px){
+        li{
+            div{
+            margin-left: 15px;
+            margin-right: 15px;
+            h3{
+
+            }
+        }
+        }
+
+    }
 `;
 
 
 export const BestServices = styled.section`
     max-width: 1570px;
+    width: 100%;
     min-width: 360px;
     display: flex;
     margin: 0 auto;
@@ -498,7 +522,7 @@ export const BestServices = styled.section`
         max-width: 450px;
         padding-right: 30px;
         h2{
-            font-size: 2.5rem;
+            font-size: min(2.5rem, 5vw);
             color: #1D164D;
             margin-bottom: 40px;
             letter-spacing: 0.5px;
@@ -509,6 +533,7 @@ export const BestServices = styled.section`
             font-weight: normal;
             letter-spacing: 0.5px;
             line-height: 30px;
+            
             margin: 10px auto;
             color: #9D9AAF;
             margin-bottom: 40px;
@@ -544,9 +569,9 @@ export const BestServices = styled.section`
        }
     .H2Text{
         margin-top: 40px;
-        max-width: 350px;
-        font-size: 1.866rem;
-        margin-bottom: 10px;
+     //   max-width: 350px;
+       // font-size: 1.866rem;
+        margin-bottom: 15px;
    }
    div{
        position: relative;
@@ -593,23 +618,36 @@ export const BestServices = styled.section`
         }
     }
    }
+   @media (max-width: 280px){
+       max-width: 280px;
+    div{
+        padding: 10px;
+
+        p{
+            line-height: 25px;
+        }
+    }
+   }
 `;
 
 export const OurBlog = styled.section`
     margin: 0 auto;
     background: #FAFAFC;
     h2{
-        font-size: 2.5rem;
+        font-size: min(2.5rem, 5vw);
         text-align: center;
         padding-top: 60px;
     }
     p{
         text-align: center;
-        font-size: 1.25em;
+        font-size: min(1.25em,2.5vw);
         font-weight: normal;
         max-width: 580px;
+        min-width: 100px;
+        padding-right: 40px;
+        padding-left: 40px;
         letter-spacing: 0.5px;
-        line-height: 30px;
+        line-height: min(30px,4vw);
         margin: 10px auto;
         color: #9D9AAF;
     }
