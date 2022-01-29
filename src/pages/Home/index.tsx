@@ -7,7 +7,7 @@ import ComigaImg1 from '../../assets/comida_1.svg';
 import ComigaImg2 from '../../assets/comida_2.svg';
 import ComigaImg3 from '../../assets/comida_3.svg';
 import ComigaImg4 from '../../assets/comida_4.svg';
-import Services from '../../assets/bloco_services.svg';
+import Services from '../../assets/bloco_services.png';
 import BlocoImg1 from '../../assets/blog_image_1.svg';
 import BlocoImg2 from '../../assets/bloco_image_2.svg';
 import BlocoImg3 from '../../assets/bloco_image_3.svg';
@@ -44,29 +44,40 @@ export function Home(){
                     <li>
                         <img src={ComigaImg1} alt="Broccoli" />
                         <div>
-                            <h3>Broccoli Salad with Bacon</h3>
-                            <a href="">See Recipe</a>
+                            <div>
+                                <h3>Broccoli Salad with Bacon</h3>
+                                <button>See Recipe</button>
+                            </div>
+
                         </div>
                     </li>
                     <li>
                         <img src={ComigaImg2} alt="Burgrs" />
                         <div>
-                            <h3>Classic Beef Burgers</h3>
-                            <a href="">See Recipe</a>
+                            <div>
+                                <h3>Classic Beef Burgers</h3>
+                                <button>See Recipe</button>
+                            </div>
+
                         </div>
                     </li>
                     <li>
                         <img src={ComigaImg3} alt="Salad" />
                         <div>
-                            <h3>Classic Potato Salad</h3>
-                            <a href="">See Recipe</a>
+                            <div>
+                                <h3>Classic Potato Salad</h3>
+                                <button>See Recipe</button>
+                            </div>
                         </div>
                     </li>
                     <li>
                         <img src={ComigaImg4} alt="Cherry Cobbler" />
                         <div>
-                            <h3>Cherry Cobbler on the Grill</h3>
-                            <a href="">See Recipe</a>
+                            <div>
+                                <h3>Cherry Cobbler on the Grill</h3>
+                                <button>See Recipe</button>
+                            </div>
+
                         </div>
                     </li>
                 </ul>
