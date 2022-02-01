@@ -9,7 +9,7 @@ export const Container = styled.header`
     position: relative;
     top: 30px;
         nav{
-            max-width: 1250px;
+            max-width: 1138px;
             min-width: 400px;
             width: 100%;
             display: flex;
@@ -61,9 +61,9 @@ export const Container = styled.header`
         }
     
     @media (max-width: 1350px){
-        top: 15px;
+        top: 20px;
          nav{
-            max-width: 1110px;
+            max-width: 1010px;
          }
    }
 
@@ -82,11 +82,11 @@ export const Container = styled.header`
             max-width: 1000px;
          }
    }
-   @media (max-width: 1080px){
+   @media (max-width: 1093px){
        top: 10px;
     nav{
              margin-top: 10px;
-            max-width: 960px;
+            max-width: 920px;
          }
    }
 
@@ -129,6 +129,10 @@ export const Container = styled.header`
                 }
             }
         }
+    }
+
+    @media (max-width: 748px){
+
     }
 
     @media (max-width: 748px){

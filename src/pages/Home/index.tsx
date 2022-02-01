@@ -61,7 +61,7 @@ export function Home(){
 
                         </div>
                     </li>
-                    <li>
+                    <li className="imgBeste-3">
                         <img src={ComigaImg3} alt="Salad" />
                         <div>
                             <div className="divInterna">
@@ -70,7 +70,7 @@ export function Home(){
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li className="imgBeste-3">
                         <img src={ComigaImg4} alt="Cherry Cobbler" />
                         <div>
                             <div className="divInterna">

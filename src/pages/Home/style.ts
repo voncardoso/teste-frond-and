@@ -14,7 +14,8 @@ export const Intro = styled.section`
     min-width: 360px;
     min-height: 200px;
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     z-index: 1;
     margin: 0 auto;
 
@@ -113,7 +114,7 @@ export const Intro = styled.section`
         }
    }
 
-   @media (max-width: 1080px){
+   @media (max-width: 1092px){
     .IntroText{
             h1{
                 max-width: 320px;
@@ -156,7 +157,7 @@ export const Intro = styled.section`
         margin-left: 20px;
     }
         img{
-            width: 550px;
+            width: 580px;
         }
         .Search-button:hover{
             font-size: 18px;
@@ -164,6 +165,20 @@ export const Intro = styled.section`
         } 
    }
      
+   @media (max-width: 949px){
+    .IntroText{
+        margin-left: 10px;
+           h1{
+               width: 250px;
+               font-size: 2.75rem;
+           }
+           div{
+            input{
+               width: 230px;
+            }
+           }
+       }
+   }
 
 
    @media (max-width: 939px){
@@ -180,7 +195,8 @@ export const Intro = styled.section`
            }
        }
         img{
-            width: 480px;
+            width: 500px;
+            height: 480px;
         }
         .Search-button:hover{
             font-size: 18px;
@@ -188,9 +204,9 @@ export const Intro = styled.section`
         } 
    }
 
-   @media (max-width: 818px){
+   @media (max-width: 833px){
     .IntroText{
-        margin-left: 0px;
+        margin-left: -6px;
            h1{
                width: 250px;
                font-size: 2.375rem;
@@ -202,7 +218,9 @@ export const Intro = styled.section`
            }
        }
         img{
-            width: 440px;
+            margin: 0px;
+            width: 460px;
+            height: 430px;
         }
         .Search-button:hover{
             font-size: 18px;
@@ -210,7 +228,7 @@ export const Intro = styled.section`
         } 
    }
 
-   @media (max-width: 748px){
+   @media (max-width: 768px){
        margin-top: 0px;
         .IntroText{
             margin-left: -8px;
@@ -246,10 +264,10 @@ export const Intro = styled.section`
         } 
     }
 
-    @media (max-width: 689px){
+    @media (max-width: 696px){
         img{
             width: 400px;
-            height: 350px;
+            height: 370px;
         }
         .Search-button:hover{
             font-size: 10px;
@@ -257,12 +275,12 @@ export const Intro = styled.section`
         } 
     }
 
-    @media (max-width: 639px){
+    @media (max-width: 647px){
         img{
             margin-top: 40px;
-            left: 20px;
-            width: 340px;
-            height: 300px;
+            left: 00px;
+            width: 360px;
+            height: 340px;
         }
         .Search-button:hover{
             font-size: 10px;
@@ -270,7 +288,7 @@ export const Intro = styled.section`
         } 
     }
 
-    @media (max-width: 579px){
+    @media (max-width: 608px){
         .IntroText{
             position: relative;
             z-index: 20;
@@ -293,9 +311,9 @@ export const Intro = styled.section`
         }
         img{
             position: relative;
-            right: 30px;
-            width: 320px;
-            height: 280px;
+           // right: 30px;
+            width: 340px;
+            height: 320px;
         }
         .Search-button{
             font-size: 0.75rem;
@@ -309,30 +327,24 @@ export const Intro = styled.section`
         } 
     }
 
-    @media (max-width: 542px){
+    @media (max-width: 553px){
         .IntroText{
             position: relative;
             z-index: 20;
             margin-top: 60px;
-            h1{
-
-            }
             div{
                 position: relative;
                 z-index: 30;
                 width: 220px;
-                input{  
-                }
             }
 
         }
 
         img{
-            position: relative;
             top: -40px;
-            width: 320px;
+            width: 340px;
             height: 310px;
-            left: -10px;
+            left: 0px;
             z-index: 40;
         }
 
@@ -340,17 +352,35 @@ export const Intro = styled.section`
             font-size: 8px;
             padding: 7.6px;
         } 
-  
     }
 
-    @media (max-width: 504px){
+    @media (max-width: 541px){
         img{
-            width: 340px;
-            height: 340px;
+            top: -40px;
+            width: 300px;
+            height: 280px;
+            left: 0px;
+            z-index: 40;
         }
     }
 
-    @media (max-width: 428px){
+    
+
+    @media (max-width: 504px){
+        img{
+            width: 285px;
+            height: 260px;
+        }
+    }
+
+    @media (max-width: 488px){
+        img{
+            width: 270px;
+            height: 260px;
+        }
+    }
+
+    @media (max-width: 470px){
         .IntroText{
             margin-top: 20px;
             left: 10px;
@@ -375,7 +405,7 @@ export const Intro = styled.section`
             position: relative;
             top: -40px;
             left: -50px;
-            width: 280px;
+            width: 300px;
             height: 220px;
 
         }
@@ -392,10 +422,31 @@ export const Intro = styled.section`
         }   
     }
 
+    @media (max-width: 446px){
+        img{
+            width: 280px;
+            height: 240px;
+        }
+    }
+
+    @media (max-width: 421px){
+        img{
+            width: 250px;
+            height: 240px;
+        }
+    }
+
+    @media (max-width: 394px){
+        img{
+            width: 230px;
+            height: 220px;
+        }
+    }
+
     @media (max-width: 378px){
         img{
-            width: 240px;
-            height: 180px;
+            width: 215px;
+            height: 190px;
         }
         .Search-button{
             font-size: 0.75rem;
@@ -418,13 +469,13 @@ export const BestRecipes = styled.section`
     margin: 0 auto;
     max-width: 1575px;
     h2{
-        font-size: min(2.5rem, 5vw);
+        font-size: min(2.5rem, 3.8vw);
         text-align: center;
         padding-top: 60px;
     }
     p{
         text-align: center;
-        font-size: min(1.25em, 2.5vw);
+        font-size: min(1.25em, 3vw);
         font-weight: normal;
         padding-right: 40px;
         padding-left: 40px;
@@ -437,30 +488,37 @@ export const BestRecipes = styled.section`
     }
 
     ul{
-        max-width: 1570px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        max-width: 1100px;
+        display: grid;
+        grid-template-columns: minmax(100px,1fr) minmax(100px,1fr);
+        margin: 0 auto;
         padding: min(60px, 10vw);
+        gap: 40px;
        li{  
            display: flex;
-           max-width: 500px;
-           min-width: 200px;
-           max-height: 180px;
+           justify-self: center;
+           max-width: 520px;
+           min-width: 100px;
+           min-height: 80px;
+           max-height: 230px;
            width: 100%;
-           margin-bottom: 20px;
            background: #FFFFFF;
-           margin-left: 20px;
            border-radius: 10px;
            box-shadow: 5px 5px 15px 0px rgb(44, 44, 44, 0.15);
            div{
+            display: grid;
+            grid-template-columns: 1fr;
             width: 100%;
             height: 100%;
+            
              div{
+
                  max-width: 200px;
                  min-width: 100px;
-                 width: 100%;
                  max-height: 128px;
+                 min-height: 50px;
+                 height: 100%;
+                 width: 100%;
                  align-self: center;
                  margin: 4vh auto 4vh auto;
                  padding-left: 5px;
@@ -469,11 +527,11 @@ export const BestRecipes = styled.section`
                    display: flex;
                    max-width: 200px;
                    width: 100%;
-                   font-size: min(1.75rem, 4vw); 
-               }
-               button{
+                   font-size: min(1.75rem, 3.4vw); 
+                }
+                button{
                     padding: 8px 16px;
-                    margin: 10px auto 0px auto;
+                    margin: min(10px, 5vh) auto 0px 0px;
                     background: #BADC58;
                     font-size: min(1rem, 3vw);
                     color: #FFFFFF;
@@ -491,52 +549,111 @@ export const BestRecipes = styled.section`
              }
            }
             img{
-                max-width: 200px;
-                min-width: 140px;
+                max-width: 300px;
+                min-width: 100px;
+                min-height: 80px;
                 width: 100%;
                 
             }
        }
     }    
-    
-    @media (max-width: 604px){
-        li{
-            div{
-            margin-left: 15px;
-            margin-right: 15px;
-            h3{
 
+    @media (max-width: 890px){
+        ul{
+            display: grid;
+            grid-template-columns: 1fr;
+
+            li{
+                max-height: 170px;
+                max-width: 385px;
             }
-        }
-        }
 
+           
+        }
+        .divInterna{
+            width:165px;
+        }
     }
 
-    @media (max-width: 450px){
-        li{
-            width: 300px;
-            width: 100%;
-            height: 120px;
-
-            img{
-                position: relative;
-                right: 5px;
-            }
-
-            div{
+    @media (max-width: 690px){
+        ul{
+            li{
+            max-width: 370px;
+            height: 140px;
                 div{
-                    width: 120px;
-                    height: 80px;
-                    margin: 10px auto 10px auto;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    
                 }
             }
         }
-    }
-    @media (max-width: 430px){
+
         .divInterna{
-            margin-top: 2vh;
+            height: 110px;
+            button{
+                height: 40px;
+            }
+        }
+
+    }
+    
+    @media (max-width: 604px){
+        ul{
+            li{
+            width: 350px;
+            height: 130px;
+            div{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        }
+        }
+
+        .divInterna{
+            h3{
+                width: 140px;
+            }
+        }
+
+    }
+
+    @media (max-width: 460px){
+        ul{
+            li{
+                height: 90px;
+                width: 240px;
+                img{
+                    width: 120px;
+                }
+            }
+        }
+        .divInterna{
+            height: 80px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+            margin-top: 6px;
+                h3{
+                    margin-top: 0px;
+                    height: 30px;
+                    width: 120px;
+                }
+                button{
+                    margin-top: 5px;
+                    height: 25px;
+                    width: 65px;
+                    padding: 0px;
+                    font-size: 11px;
+                }
         }
     }
+
+    @media (max-width: 420px){
+        .divInterna{
+            width: 140px;
+            margin-left: -10px;
+        }
+    }
+
 `;
 
 
