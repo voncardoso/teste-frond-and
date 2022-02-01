@@ -1,5 +1,5 @@
 import { IconContext } from "react-icons";
-import { Container, Intro, BestRecipes, BestServices, OurBlog  } from "./style";
+import { Container, Intro, BestRecipes, BestServices, OurBlog, Membership  } from "./style";
 import { AiOutlineSearch, AiOutlineArrowRight } from "react-icons/ai";
 import { Header } from '../../components/header';
 import IllustrationIMg from '../../assets/Illustration.png';
@@ -12,6 +12,7 @@ import BlocoImg1 from '../../assets/blog_image_1.svg';
 import BlocoImg2 from '../../assets/bloco_image_2.svg';
 import BlocoImg3 from '../../assets/bloco_image_3.svg';
 import BlocoImg4 from '../../assets/bloco_image_4.svg';
+import Bloco_final from '../../assets/bloco_final_image.svg';
 
 export function Home(){
     return(
@@ -158,6 +159,20 @@ export function Home(){
             </IconContext.Provider>
            
             </OurBlog>
+            <Membership>
+                <div className="divInputs">
+                    <h2>Join our membership to get special offer</h2>
+                    <div >
+                        <input type="text"
+                         name="" 
+                         id=""
+                         placeholder="" 
+                         />
+                        <button>join</button>
+                    </div>
+                </div>
+                <img src={Bloco_final}/>
+            </ Membership>
         </Container>
     )
 }

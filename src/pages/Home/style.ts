@@ -469,7 +469,7 @@ export const BestRecipes = styled.section`
     margin: 0 auto;
     max-width: 1575px;
     h2{
-        font-size: min(2.5rem, 3.8vw);
+        font-size: min(2.5rem, 4vw);
         text-align: center;
         padding-top: 60px;
     }
@@ -662,7 +662,7 @@ export const BestServices = styled.section`
     width: 100%;
     min-width: 360px;
     display: flex;
-    margin: 0 auto;
+    margin: 40px auto;
     img{
         max-width: 726px;
         min-width: 100px;
@@ -678,14 +678,14 @@ export const BestServices = styled.section`
         max-width: 450px;
         padding-right: 30px;
         h2{
-            font-size: min(2.5rem, 5vw);
+            font-size: min(2.5rem, 4vw);
             color: #1D164D;
             margin-bottom: 40px;
             letter-spacing: 0.5px;
         }
 
         p{
-            font-size: 1.25em;
+            font-size: min(1.25em, 3.8vw);
             font-weight: normal;
             letter-spacing: 0.5px;
             line-height: 30px;
@@ -792,7 +792,7 @@ export const OurBlog = styled.section`
     margin: 0 auto;
     background: #FAFAFC;
     h2{
-        font-size: min(2.5rem, 5vw);
+        font-size: min(2.5rem, 4vw);
         text-align: center;
         padding-top: 60px;
     }
@@ -822,6 +822,12 @@ export const OurBlog = styled.section`
         margin-left: 10%;
         margin-top: 30px;
         li{
+            max-width: 348px;
+            min-width: 200px;
+            max-height: 370px;
+            min-height: 200px;
+            height: 100%;
+            width: 100%;
             margin-left: 15px;
             margin-bottom: 60px;
             background: #FFFFFF;
@@ -830,6 +836,7 @@ export const OurBlog = styled.section`
             img{
                 max-width: 348px;
                 min-width: 40px;
+                width: 100%;
             }
             .divContainer{
                 margin-left: 20px;
@@ -837,7 +844,7 @@ export const OurBlog = styled.section`
               h5{
                   max-width: 240px;
                   margin-top: 20px;
-                  font-size: 1.75rem;
+                  font-size: min(1.75rem, 3.8vw);
               }  
               div{
                 display: flex;
@@ -850,6 +857,7 @@ export const OurBlog = styled.section`
                       border-radius: 100%;
                     }
                   strong{
+                      font-size: min(14px, 3vw);
                       margin-left: 5px;
                       color: #9D9AAF;
                       font-weight: normal;
@@ -873,3 +881,170 @@ export const OurBlog = styled.section`
    }
 
 `;
+
+export const Membership = styled.section`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1575px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    img{
+        width: 100%;
+        justify-self: end;
+    }
+    div{
+        margin: 0 auto 40px auto;
+        align-self: center;
+        max-width: 500px;
+        min-width: 100px;
+        width: 100%;
+        h2{
+            font-size: min(2.5rem, 4vw);
+            max-width: 400px;
+            padding-top: 60px;
+            color: #1D164D;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        div{
+            max-width: 600px;
+            width: 100%;
+            input{
+                max-width: 360px;
+                min-width: 50px;
+                width: 100%;
+                height: 50px;
+                border-radius: 5px;
+                border: 0.5px solid #1D164D ;
+            }
+            button{
+                position: relative;
+                top: 2px;
+                margin-left: 10px;
+                height: 52px;
+                width: 70px;
+                font-weight: normal;
+                color: #FFFFFF;
+                font-size: 1.2rem;
+                border: none;
+                border-radius: 5px;
+                background: #B9DB58;
+            }
+        }
+
+        button:hover{
+            background: #FFFFFF;
+            color: #B9DB58;
+            border: solid 1px #B9DB58;
+        }
+        
+    }
+
+    @media (max-width: 1061px) {
+        .divInputs{
+            max-width: 380px;
+            h2{
+                font-size: 34px;
+            }
+            input{
+                height: 40px;
+                margin: 0px;
+                max-width: 280px;
+            }
+            button{
+                height: 42px;
+                width: 70px;
+            }
+        }
+    }
+
+    @media (max-width: 1061px) {
+        .divInputs{
+            max-width: 360px;
+            h2{
+                font-size: min(34px, 4vw);
+                max-width: 320px;
+            }
+            input{
+                height: 35px;
+                margin: 0px;
+                max-width: 280px;
+            }
+            button{
+                height: 38px;
+                width: 60px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    @media (max-width: 804px){
+        .divInputs{
+            max-width: 320px;
+            h2{
+                font-size: min(28px, 4vw);
+                max-width: 300px;
+            }
+            input{
+                height: 35px;
+                margin: 0px;
+                max-width: 240px;
+            }
+            button{
+                height: 38px;
+                width: 60px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    @media (max-width: 644px){
+        .divInputs{
+            max-width: 260px;
+            h2{
+                font-size: min(24px, 4vw);
+                max-width: 300px;
+            }
+            input{
+                height: 30px;
+                margin: 0px;
+                max-width: 180px;
+            }
+            button{
+                top: 1px;
+                height: 32px;
+                width: 60px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    @media (max-width: 550px)
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        img{
+            display: none;
+        }
+        .divInputs{
+            max-width: 300px;
+            h2{
+                font-size: 22px;
+                max-width: 300px;
+            }
+            input{
+                height: 30px;
+                margin: 0px;
+                max-width: 220px;
+            }
+            button{
+                top: 1px;
+                height: 32px;
+                width: 60px;
+                margin-left: 10px;
+            }
+        }
+    }
+`
+
