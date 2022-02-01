@@ -540,8 +540,6 @@ export const BestRecipes = styled.section`
                     font-weight: normal;
                }
                button:hover{
-
-                    padding: 6px 14px;
                     background: #FFFFFF;
                     color: #B9DB58;
                     border: solid 2px #B9DB58;
@@ -824,7 +822,7 @@ export const OurBlog = styled.section`
         li{
             max-width: 348px;
             min-width: 200px;
-            max-height: 370px;
+            max-height: 470px;
             min-height: 200px;
             height: 100%;
             width: 100%;
@@ -911,12 +909,15 @@ export const Membership = styled.section`
             max-width: 600px;
             width: 100%;
             input{
+                font-size: 1rem;
                 max-width: 360px;
                 min-width: 50px;
                 width: 100%;
                 height: 50px;
                 border-radius: 5px;
                 border: 0.5px solid #1D164D ;
+                font-weight: normal;
+                padding-left: 5px;
             }
             button{
                 position: relative;

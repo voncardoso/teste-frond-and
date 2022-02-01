@@ -166,7 +166,7 @@ export function Home(){
                         <input type="text"
                          name="" 
                          id=""
-                         placeholder="" 
+                         placeholder="Enter your email address" 
                          />
                         <button>join</button>
                     </div>
