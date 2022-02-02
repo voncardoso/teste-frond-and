@@ -2,6 +2,7 @@ import { IconContext } from "react-icons";
 import { Container, Intro, BestRecipes, BestServices, OurBlog, Membership  } from "./style";
 import { AiOutlineSearch, AiOutlineArrowRight } from "react-icons/ai";
 import { Header } from '../../components/header';
+import { Footer } from '../../components/footer';
 import IllustrationIMg from '../../assets/Illustration.png';
 import ComigaImg1 from '../../assets/comida_1.svg';
 import ComigaImg2 from '../../assets/comida_2.svg';
@@ -173,6 +174,7 @@ export function Home(){
                 </div>
                 <img src={Bloco_final}/>
             </ Membership>
+            <Footer />
         </Container>
     )
 }
