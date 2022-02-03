@@ -12,7 +12,9 @@ export function Header(){
                     <li>HEALTHY RECIPES</li>
                     <li>BLOG</li>
                     <li>JOIN </li>
-                    <li className='buttonRegister'>REGISTER</li>
+                    <li>
+                        <a className='buttonRegister' href="">REGISTER</a>
+                    </li>
                 </ul>
             </nav>
         </Container>

@@ -1,15 +1,19 @@
 import React from 'react';
-import { Header } from './components/header';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import { Home } from './pages/Home';
+import { Register } from './pages/Register';
 
 
 
 
-function App() {
+const App = ():JSX.Element => {
   return (
-    <>
-      <Home />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/"  element={<Home />} />
+        <Route path="/login" element={<Register />}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
