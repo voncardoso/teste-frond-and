@@ -234,6 +234,7 @@ export const ContainerMoile = styled.nav`
         background: #81C861;
         width: 200px;
         animation: show-right .8s forwards;
+        z-index: 2000;
         li{
             list-style: none;
             margin-left: 17px;
@@ -275,7 +276,16 @@ export const ContainerMoile = styled.nav`
             background: #81C861;
             color: #FFFFFF;
             border: 2px solid #FFFFFF;
-        }
+    }
+
+    .divSecundaria.active{
+        position: fixed;
+        width: 100%;
+        padding: 100%;
+        background: rgba(0,0,0,.3);
+       z-index: 1;
+       animation: show-right .8s forwards;
+    }
     @keyframes show-right{
         from {
             opacity: 0;

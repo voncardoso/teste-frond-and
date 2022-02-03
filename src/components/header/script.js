@@ -29,7 +29,9 @@ export function initMenuMobile() {
         }
 
         ListNav.addEventListener('click', fecharMenu);
-        divSecundaria.addEventListener('click', fecharMenu);
+        divSecundaria.addEventListener('click', ()=>[
+            divSecundaria.classList.remove('active')
+        ]);
         linksInternos.forEach((link) => {
           link.addEventListener('click', initScrollSuaveMobile);
         });
