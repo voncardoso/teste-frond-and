@@ -11,7 +11,7 @@ const App = ():JSX.Element => {
     <BrowserRouter>
       <Routes>
         <Route path="/"  element={<Home />} />
-        <Route path="/login" element={<Register />}/>
+        <Route path="/Register" element={<Register />}/>
       </Routes>
     </BrowserRouter>
   );

@@ -57,6 +57,7 @@ export const Container = styled.header`
             background: #FFFFFF;
             color: #BADC58;
             border-radius: 4px;
+            text-decoration: none;
             cursor: pointer;
         }
 
@@ -243,6 +244,7 @@ export const ContainerMoile = styled.nav`
             color: #FFFFFF;
             font-size: 1rem;
             font-weight: 600;
+            
         }
         li:hover{
             color: rgba(255,255,255, 0.5);
@@ -270,6 +272,8 @@ export const ContainerMoile = styled.nav`
         border-radius: 4px;
         cursor: pointer;
         z-index: 30000;
+     list-style: none;
+     text-decoration: none;
     }
 
     .buttonRegister:hover{
