@@ -193,16 +193,16 @@ export const ContainerMoile = styled.nav`
             margin-top: -20px;
             background: none;
             border: none;
-            padding: .5rem 1rem;
+            padding: .8rem 1rem;
             border-radius: 4px;
             text-transform: uppercase;
             font-weight: bold;
             cursor: pointer;
             top: 40px;
-            z-index: 10000;
+            z-index: 100000;
         }
 
-        button::before{
+        button:before{
         margin-right: 6px;
         content: '';
         display: inline-block;
@@ -211,6 +211,7 @@ export const ContainerMoile = styled.nav`
         background: #B9DB58;
         box-shadow: 0 6px #B9DB58, 0 -6px #B9DB58 ;
         transition: transform .3s;
+        z-index: 100000;
     }
         button.active::before{
         margin-right: 6px;
@@ -221,6 +222,7 @@ export const ContainerMoile = styled.nav`
         background: #FFFFFF;
         box-shadow: 0 6px #FFFFFF, 0 -6px #FFFFFF;
         transition: transform .3s;
+        z-index: 100000;
     }
 
     ul{

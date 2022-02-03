@@ -7,9 +7,9 @@ export function Header(){
     const ListMobile  = document.querySelector('.ListMobile ');
     
     function menuMobile(){
-        console.log('clicou')
-        menuButton?.classList.toggle('active');
-        ListMobile?.classList.toggle('active');
+        console.log('clicou');
+        menuButton?.classList.add('active');
+        ListMobile?.classList.add('active');
     }
 
    
@@ -29,7 +29,7 @@ export function Header(){
         </Container>
         <ContainerMoile>
             <div className="divSecundaria"></div>   
-            <button className="ButtonMobile" onClick={menuMobile}></button>
+            <button className="ButtonMobile" onClick={menuMobile}>'1'</button>
                 <ul className="ListMobile">
                     <li>HEALTHY RECIPES</li>
                     <li>BLOG</li>
