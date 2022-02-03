@@ -233,6 +233,7 @@ export const ContainerMoile = styled.nav`
         padding-top: 60px;
         background: #81C861;
         width: 200px;
+        animation: show-right .8s forwards;
         li{
             list-style: none;
             margin-left: 17px;
@@ -249,6 +250,9 @@ export const ContainerMoile = styled.nav`
     .ListMobile.active{
         display: block;
         animation: show-right .8s forwards;
+    }
+    .ListMobile{
+        animation: show-left .8s forwards;
     }
     
     }
@@ -276,6 +280,18 @@ export const ContainerMoile = styled.nav`
         from {
             opacity: 0;
             transform: translate3d(-30px, 0, 0);
+        }
+
+        to{
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    @keyframes show-left{
+        from {
+            opacity: 0;
+            transform: translate3d(30px, 0, 0);
         }
 
         to{
