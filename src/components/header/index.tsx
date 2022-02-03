@@ -8,8 +8,8 @@ export function Header(){
     
     function menuMobile(){
         console.log('clicou');
-        menuButton?.classList.add('active');
-        ListMobile?.classList.add('active');
+        menuButton?.classList.toggle('active');
+        ListMobile?.classList.toggle('active');
     }
 
    
@@ -29,7 +29,7 @@ export function Header(){
         </Container>
         <ContainerMoile>
             <div className="divSecundaria"></div>   
-            <button className="ButtonMobile" onClick={menuMobile}>'1'</button>
+            <button className="ButtonMobile" onClick={menuMobile}></button>
                 <ul className="ListMobile">
                     <li>HEALTHY RECIPES</li>
                     <li>BLOG</li>

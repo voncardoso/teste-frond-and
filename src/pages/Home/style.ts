@@ -273,6 +273,7 @@ export const Intro = styled.section`
             font-size: 10px;
             padding: 8.5px;
         } 
+    
     }
 
     @media (max-width: 647px){
