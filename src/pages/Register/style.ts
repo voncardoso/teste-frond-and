@@ -109,4 +109,12 @@ export const Container = styled.section`
                 align-self: center;
            }
         }
+
+        @media (max-width: 720px){
+            display: grid;
+            grid-template-columns: 1fr;
+            .imgRegister{
+           display: none;
+        }
+        }
 `;

@@ -13,7 +13,7 @@ export function Header(){
                     <li>BLOG</li>
                     <li>JOIN </li>
                     <li>
-                        <a className='buttonRegister' href="">REGISTER</a>
+                        <a className='buttonRegister' href="/Register">REGISTER</a>
                     </li>
                 </ul>
             </nav>
@@ -25,7 +25,9 @@ export function Header(){
                     <li>HEALTHY RECIPES</li>
                     <li>BLOG</li>
                     <li>JOIN </li>
-                    <li className='buttonRegister'>REGISTER</li>
+                    <li className='buttonRegister'>
+                        <a href="/Register">REGISTER</a>
+                    </li>
                 </ul>
         </ContainerMoile>
         </>

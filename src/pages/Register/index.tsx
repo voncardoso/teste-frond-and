@@ -128,7 +128,11 @@ export function Register(){
 
     function cadUsuario(event: any){
         event.preventDefault();
-        
+        const quantCPF = cpf.length;
+        if(quantCPF !== 11){
+            alert("CPF incorreto");
+            return;
+        }
         console.log('correto');
         initMenuMobile();
     }
