@@ -37,6 +37,7 @@ export const Intro = styled.section`
                border-radius: 5px;
                font-size: 1rem;
                font-weight: normal;
+               
             }
 
             button{
