@@ -876,8 +876,30 @@ export const OurBlog = styled.section`
        align-self: flex-end;
        color: #B9DB58;
        padding: 10px 10px;
-       background: #FFFFFF;
+       background: #FAFAFC;
        border-radius: 100%;
+   }
+
+   @media (max-width: 1199px){
+
+   }
+
+   @media (max-width: 979px){
+    .Search-Seta{
+
+        left: 93%;
+    }
+   }
+   @media (max-width: 721px){
+    .Search-Seta{
+
+        left: 93%;
+    }
+   }
+   @media (max-width: 620px){
+    .Search-Seta{
+        left: 90%;
+    }
    }
 
 `;
