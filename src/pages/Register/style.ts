@@ -13,6 +13,7 @@ export const Container = styled.section`
             margin-bottom: 40px;
             color: #1D164D;
             font-size: 2rem;
+            
         }
 
         .divRegister{
@@ -83,6 +84,14 @@ export const Container = styled.section`
         }
         .Endereco{
             display: none;
+            ul{
+                li{
+                    label{
+                        font-weight: normal;
+                        
+                    }
+                }
+            }
         }
 
         .Endereco.active{

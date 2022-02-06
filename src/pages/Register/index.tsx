@@ -51,23 +51,23 @@ export function Register(){
                 <form action="" onSubmit={cadUsuario} className='User'>
                 <ul>
                     <li>
-                        <label htmlFor="">Nome Completo</label>
+                       
                         <input 
                             type="text"  
-                            placeholder='Nome Completo'
+                            placeholder='Full name'
                             required
                             />
                     </li>
                     <li>
-                        <label htmlFor="">E-mail</label>
+                       
                         <input 
                             type="email"  
-                            placeholder='Email'
+                            placeholder='E-mail'
                             required
                         />
                     </li>
                     <li>
-                        <label htmlFor="">Password</label>
+                     
                         <input 
                             type="password"  
                             placeholder='Password'
@@ -79,10 +79,10 @@ export function Register(){
                         />
                     </li>
                     <li>
-                        <label htmlFor="">Repte Password</label>
+                        
                         <input 
                             type="password"  
-                            placeholder='Repite password'
+                            placeholder='Repeat password'
                             onChange={(event: any)=>{
                                 setSenhaRept(event.target.value)
                             }}
@@ -97,19 +97,22 @@ export function Register(){
                 </form>
                 <form action="" className='Endereco'>
                 <ul>
-                    <label htmlFor="">CEP</label>
                     <li>
-                        <input type="number" placeholder='CEP' onBlur={OnblueCep}/>
-                    </li>
-                    <li className='EndereçoNumero'>
-                        
                         <input 
-                            type="Text"  
-                            placeholder='Logradouro'
-                            value={logradouro}
+                            type="number" 
+                            placeholder='CEP' 
+                            onBlur={OnblueCep}
                             required
                         />
+                    </li>
+                    <li className='EndereçoNumero'>
 
+                            <input 
+                                type="Text"  
+                                placeholder='Public place'
+                                value={logradouro}
+                                required
+                            />
                         <input 
                         className='numeroResidencia'
                             type="text"  
@@ -120,14 +123,13 @@ export function Register(){
                     <li>
                         <input 
                             type="text"  
-                            placeholder='complemento (opcional)'
-                            required
+                            placeholder='Add-on (optional)'
                         />
                     </li>
                     <li>
                         <input 
                             type="text"  
-                            placeholder='Bairro'
+                            placeholder='District'
                             value={bairro}
                             required
                         />
@@ -136,7 +138,7 @@ export function Register(){
                     <li className='EndereçoNumero'>
                         <input 
                             type="text"  
-                            placeholder='Cidade'
+                            placeholder='City'
                             value={cidade}
                             required
                         />
