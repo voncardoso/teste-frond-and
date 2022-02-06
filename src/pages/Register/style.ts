@@ -12,7 +12,7 @@ export const Container = styled.section`
         h1{
             margin-bottom: 40px;
             color: #1D164D;
-            font-size: 2rem;
+            font-size: 2.3rem;
             
         }
 

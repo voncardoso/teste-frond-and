@@ -1,31 +1,140 @@
 import {Container} from './style';
 import ImgChefe from '../../assets/Chef-amico 1.png' 
 import { useState } from 'react';
-import { Formik } from 'formik';
+import {initMenuMobile} from "./script";
 export function Register(){
-    const [senha, setSenha] = useState();
-    const [senhaRept, setSenhaRept] = useState();
-    const [bairro, setBairro] = useState();
-    const [logradouro, setLogradouro] = useState();
-    const [cidade, setCidade] = useState();
-    const [uf, setUF] = useState();
-    const endereco = document.querySelector('.Endereco')
-    const User = document.querySelector('.User');
+    const [name, setName] = useState(()=>{
+        const storage = localStorage.getItem('name');
+  
+        if(storage){
+          const jsonParse = JSON.parse(storage);
+          return jsonParse;
+        }
+  
+        return
+      });
+      if(name){
+        localStorage.setItem('name', JSON.stringify(name));
+      }
+    const [cpf, setCpf] = useState(()=>{
+        const storage = localStorage.getItem('cpf');
+  
+        if(storage){
+          const jsonParse = JSON.parse(storage);
+          return jsonParse;
+        }
+  
+        return
+      });
+      if(cpf){
+        localStorage.setItem('cpf', JSON.stringify(cpf));
+      }
+      
+    const [date, setDate] = useState(()=>{
+        const storage = localStorage.getItem('date');
+  
+        if(storage){
+          const jsonParse = JSON.parse(storage);
+          return jsonParse;
+        }
+  
+        return
+      });
+      if(date){
+        localStorage.setItem('date', JSON.stringify(date));
+      }
+      const [cep, setCep] = useState(()=>{
+        const storage = localStorage.getItem('cep');
+  
+        if(storage){
+          const jsonParse = JSON.parse(storage);
+          return jsonParse;
+        }
+  
+        return
+      });
+      if(cep){
+        localStorage.setItem('cep', JSON.stringify(cep));
+      }
+    const [email, setEmail] = useState(()=>{
+        const storage = localStorage.getItem('email');
+  
+        if(storage){
+          const jsonParse = JSON.parse(storage);
+          return jsonParse;
+        }
+  
+        return
+      });
+      if(email){
+        localStorage.setItem('email', JSON.stringify(email));
+      }
+    const [bairro, setBairro] = useState(()=>{
+        const storage = localStorage.getItem('bairro');
+  
+        if(storage){
+          const jsonParse = JSON.parse(storage);
+          return jsonParse;
+        }
+  
+        return
+      });
+      if(bairro){
+        localStorage.setItem('bairro', JSON.stringify(bairro));
+      }
+    const [logradouro, setLogradouro] = useState(()=>{
+        const storage = localStorage.getItem('logradouro');
+  
+        if(storage){
+          const jsonParse = JSON.parse(storage);
+          return jsonParse;
+        }
+  
+        return
+      });
+      if(logradouro){
+        localStorage.setItem('logradouro', JSON.stringify(logradouro));
+      }
+    const [cidade, setCidade] = useState(()=>{
+        const storage = localStorage.getItem('cidade');
+  
+        if(storage){
+          const jsonParse = JSON.parse(storage);
+          return jsonParse;
+        }
+  
+        return
+      });
+      if(cidade){
+        localStorage.setItem('cidade', JSON.stringify(cidade));
+      }
+    const [uf, setUF] = useState(()=>{
+        const storage = localStorage.getItem('uf');
+  
+        if(storage){
+          const jsonParse = JSON.parse(storage);
+          return jsonParse;
+        }
+  
+        return
+      });
+      if(uf){
+        localStorage.setItem('uf', JSON.stringify(uf));
+      }
+
+
+    // estilos
 
 
     function cadUsuario(event: any){
         event.preventDefault();
-        if(senha != senhaRept){
-            alert('incorreto')
-        }else if(senha === senhaRept){
-            console.log('correto');
-            endereco?.classList.add('active');
-            User?.classList.add('active');
-        }
+        
+        console.log('correto');
+        initMenuMobile();
     }
 
     function OnblueCep(event: any){
-
+        setCep(event.target.value);
         const value1 = +event.target.value;
         if(value1.toLocaleString.length != 8){
             console.log('correto cep');
@@ -40,10 +149,7 @@ export function Register(){
             setUF(data.uf);
         });
     }
-    console.log(bairro);
 
-    console.log('senha',senha);
-    console.log('rept', senhaRept)
     return(
         <Container>
             <div className='divRegister'>
@@ -51,47 +157,52 @@ export function Register(){
                 <form action="" onSubmit={cadUsuario} className='User'>
                 <ul>
                     <li>
-                       
+                       <label htmlFor="">Full name</label>
                         <input 
                             type="text"  
-                            placeholder='Full name'
+                            placeholder='Rafael Cardoso'
+                            onChange={(event: any)=>{
+                                setName(event.target.value)
+                            }}
+                            value={name}
                             required
                             />
                     </li>
                     <li>
-                       
+                        <label htmlFor="">CPF</label>
+                       <input 
+                           type="text"  
+                           placeholder='000.000.000-00'
+                           onChange={(event: any)=>{
+                            setCpf(event.target.value)
+                        }}
+                            value={cpf}
+                           required
+                        />
+                   </li>
+                   <li>
+                       <label htmlFor="">Birth date</label>
+                        <input 
+                            type="date"  
+                            onChange={(event: any)=>{
+                                setDate(event.target.value)
+                            }}
+                                value={date}
+                            required
+                        />
+                    </li>
+                    <li>
+                        <label htmlFor="">E-mail</label>
                         <input 
                             type="email"  
-                            placeholder='E-mail'
-                            required
-                        />
-                    </li>
-                    <li>
-                     
-                        <input 
-                            type="password"  
-                            placeholder='Password'
                             onChange={(event: any)=>{
-                                setSenha(event.target.value)
+                                setEmail(event.target.value)
                             }}
-                            value={senha}
+                                value={email}
+                            placeholder='voncardoso'
                             required
                         />
                     </li>
-                    <li>
-                        
-                        <input 
-                            type="password"  
-                            placeholder='Repeat password'
-                            onChange={(event: any)=>{
-                                setSenhaRept(event.target.value)
-                            }}
-                            value={senhaRept}
-                            required
-                        />
-                    </li>
-
-                   
                 </ul>
                 <button className='buttoregisterUser' type='submit'>Proximo</button>
                 </form>
@@ -102,6 +213,7 @@ export function Register(){
                             type="number" 
                             placeholder='CEP' 
                             onBlur={OnblueCep}
+                            value={cep}
                             required
                         />
                     </li>
