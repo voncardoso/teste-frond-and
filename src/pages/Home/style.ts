@@ -880,24 +880,45 @@ export const OurBlog = styled.section`
        border-radius: 100%;
    }
 
-   @media (max-width: 1199px){
-
+   @media (max-width: 1196px){
+       .Search-Seta{
+        top: -300px;
+       }
+    
    }
 
-   @media (max-width: 979px){
+   @media (max-width: 845px){
     .Search-Seta{
-
-        left: 93%;
+        top: -290px;
     }
    }
-   @media (max-width: 721px){
+   @media (max-width:  638px){
     .Search-Seta{
-
-        left: 93%;
+        top: -280px;
     }
    }
-   @media (max-width: 620px){
+   @media (max-width: 577px){
     .Search-Seta{
+        top: -275px;
+        left: 90%;
+    }
+   }
+   @media (max-width: 551px){
+    .Search-Seta{
+        top: -245px;
+        left: 90%;
+    }
+   }
+
+   @media (max-width: 473px){
+    .Search-Seta{
+        top: -240px;
+        left: 90%;
+    }
+   }
+   @media (max-width: 397px){
+    .Search-Seta{
+        top: -230px;
         left: 90%;
     }
    }
