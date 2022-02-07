@@ -1,6 +1,7 @@
 import { IconContext } from "react-icons";
-import { Container, Intro, BestRecipes, BestServices, OurBlog, Membership  } from "./style";
+import { Container, Intro, BestRecipes, BestServices, OurBlog, Membership, CookiesContainer  } from "./style";
 import { AiOutlineSearch, AiOutlineArrowRight } from "react-icons/ai";
+import {initMenuMobile} from "./script";
 import { Header } from '../../components/header';
 import { Footer } from '../../components/footer';
 import IllustrationIMg from '../../assets/Illustration.png';
@@ -16,6 +17,13 @@ import BlocoImg4 from '../../assets/bloco_image_4.svg';
 import Bloco_final from '../../assets/bloco_final_image.svg';
 
 export function Home(){
+    const SearchSeta = document.querySelector('.Search-Seta');
+    const ulOverflow = document.querySelector('.ulOverflow');
+  SearchSeta?.addEventListener('click', ()=>{
+    SearchSeta?.classList.toggle('active');
+    ulOverflow?.classList.add('active');
+    
+  })
     return(
         <Container>
              <Header />
@@ -112,7 +120,7 @@ export function Home(){
                 Vokalia and Consonantia, there live the blind texts.
             </p>
                     
-            <ul>
+            <ul className="ulOverflow">
                 <li>
                     <img src={BlocoImg1} alt="" />
                     <div className="divContainer">
@@ -124,7 +132,7 @@ export function Home(){
                     </div>
                 </li>
                 <li>
-                    <img src={BlocoImg1} alt="" />
+                    <img src={BlocoImg2} alt="" />
                     <div className="divContainer">
                         <h5>Quick-start guide to nuts and seeds</h5>
                         <div>
@@ -134,7 +142,7 @@ export function Home(){
                     </div>
                 </li>
                 <li>
-                    <img src={BlocoImg1} alt="" />
+                    <img src={BlocoImg3} alt="" />
                     <div className="divContainer">
                         <h5>Quick-start guide to nuts and seeds</h5>
                         <div>
@@ -144,7 +152,7 @@ export function Home(){
                     </div>
                 </li>
                 <li>
-                    <img src={BlocoImg1} alt="" />
+                    <img src={BlocoImg4} alt="" />
                     <div className="divContainer">
                         <h5>Quick-start guide to nuts and seeds</h5>
                         <div>
@@ -155,10 +163,11 @@ export function Home(){
                 </li>
 
             </ul>
+
+
             <IconContext.Provider value={{className: "Search-Seta" }}>
                 <AiOutlineArrowRight/>
             </IconContext.Provider>
-           
             </OurBlog>
             <Membership>
                 <div className="divInputs">
@@ -175,6 +184,13 @@ export function Home(){
                 <img src={Bloco_final}/>
             </ Membership>
             <Footer />
+
+            <CookiesContainer className="cookiesContainer">
+                <div className="cookies-content">
+                    <p>Cookies: We use cookies to personalize ads and improve your experience on the site. By continuing to browse, you agree to our Privacy Policy</p>
+                    <button className="cookies-save" onClick={initMenuMobile}>Salvar e continuar</button>
+                </div>
+            </CookiesContainer>
         </Container>
     )
 }

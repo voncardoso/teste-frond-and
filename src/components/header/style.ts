@@ -35,6 +35,7 @@ export const Container = styled.header`
                     align-self: center;
                     font-weight: 600;
                     color: #FFFFFF;
+                    cursor: pointer;
                 }
                 li:hover{
                     color: rgba(255,255,255, 0.5);
@@ -184,10 +185,14 @@ export const Container = styled.header`
 export const ContainerMoile = styled.nav`
     display: none;
     z-index: 0;
+    list-style: none;
+    text-decoration: none;
     @media (max-width: 748px) {
         display: block;
         position: absolute;
         z-index: 140;
+        list-style: none;
+        text-decoration: none;
         button{
             position: absolute;
             display: flex;
@@ -244,6 +249,11 @@ export const ContainerMoile = styled.nav`
             color: #FFFFFF;
             font-size: 1rem;
             font-weight: 600;
+            cursor: pointer;
+            a{
+                list-style: none;
+                text-decoration: none;
+            }
             
         }
         li:hover{
@@ -272,8 +282,8 @@ export const ContainerMoile = styled.nav`
         border-radius: 4px;
         cursor: pointer;
         z-index: 30000;
-     list-style: none;
-     text-decoration: none;
+        list-style: none;
+        text-decoration: none;
     }
 
     .buttonRegister:hover{

@@ -866,7 +866,14 @@ export const OurBlog = styled.section`
             }
 
         }
+
+
     }
+    .ulOverflow.active{
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+        }
 
    .Search-Seta{
        position: relative;
@@ -1093,4 +1100,55 @@ export const Membership = styled.section`
         }
     }
 `
+export const CookiesContainer = styled.div`
+    color:#FFFFFF;
+    position: fixed;
+    width: 100%;
+    bottom: 2rem;
+    z-index: 1000;
+    font-size: 1rem;
+    font-weight: normal;
+    .cookies-content{
+        box-shadow: 0 1px 3px rgba(0,0,0, 0.15);
+        background: #B9DB58;
+        max-width: 1000px;
+        border-radius: 5px;
+        padding: 1rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 0.5rem;
+        transform: translateY(1rem);
+        animation: slideUp 0.5s forwards;
 
+    }
+    .cookies-save{
+        grid-column: 2;
+        grid-row: 1/3;
+        background: #FFFFFF;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+        padding: 0.8rem 1rem;
+        border-radius: 5px;
+        color: #B9DB58;
+    }
+    .cookies-save:hover{
+        background: #B9DB58;
+        color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+    }
+
+    .cookies-pref{
+        label{
+            margin-left: 20px;
+        }
+    }
+
+    @keyframes slideUp{
+        to{
+            transform: initial;
+            opacity: initial;
+        }
+    }
+`;
