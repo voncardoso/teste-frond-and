@@ -46,7 +46,7 @@ export function Home(){
                 <img src={IllustrationIMg} alt="" />
             </Intro >
 
-            <BestRecipes>
+            <BestRecipes id="recipes" data-anime="scroll">
                 <h2 className="H2Text">Our Best Recipes</h2>
                 <p>Far far away, behind the word mountains, far from the countries
                 Vokalia and Consonantia, there live the blind texts.</p>
@@ -92,7 +92,7 @@ export function Home(){
                     </li>
                 </ul>
             </BestRecipes>
-            <BestServices>
+            <BestServices >
                 <img src={Services} alt="" />
                 <div>
                     <h2 className="H2Text">The best services ready To serve you</h2>
@@ -113,7 +113,7 @@ export function Home(){
                 </div>
             </BestServices>
 
-            <OurBlog>
+            <OurBlog id="blog" data-anime="scroll">
             <h2 className="H2Text">Red Our Blog</h2>
             <p>
                 Far far away, behind the word mountains, far from the countries
@@ -169,7 +169,7 @@ export function Home(){
                 <AiOutlineArrowRight/>
             </IconContext.Provider>
             </OurBlog>
-            <Membership>
+            <Membership id="join">
                 <div className="divInputs">
                     <h2>Join our membership to get special offer</h2>
                     <div >

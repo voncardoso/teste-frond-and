@@ -36,8 +36,14 @@ export const Container = styled.header`
                     font-weight: 600;
                     color: #FFFFFF;
                     cursor: pointer;
+
+                    a{
+                        text-decoration: none;
+                        list-style: none;
+                        color: #FFFFFF
+                    }
                 }
-                li:hover{
+                a:hover{
                     color: rgba(255,255,255, 0.5);
                 }
             }

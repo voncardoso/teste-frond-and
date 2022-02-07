@@ -8,10 +8,20 @@ export function Header(){
         <Container>
             <nav>
                 <h2>Healthy Food</h2>
-                <ul>
-                    <li>HEALTHY RECIPES</li>
-                    <li>BLOG</li>
-                    <li>JOIN </li>
+                <ul className='List'>
+                    <li>
+                        <a href="#recipes">HEALTHY RECIPES</a>
+                    </li>
+                    <li>
+                        <a href="#blog">
+                            BLOG
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#join">
+                            JOIN 
+                        </a>
+                    </li>
                     <li>
                         <a className='buttonRegister' href="/Register">REGISTER</a>
                     </li>
