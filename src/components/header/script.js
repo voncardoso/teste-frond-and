@@ -41,6 +41,7 @@ export function initMenuMobile() {
         linksInternos.forEach((link) => {
           link.addEventListener('click', initScrollSuaveMobile);
         });
+        initScrollSuave();
 }
 
 const linksInternos = document.querySelectorAll('.List a[href^="#"]');

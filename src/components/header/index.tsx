@@ -1,5 +1,5 @@
 import {Container, ContainerMoile} from './style';
-import {initMenuMobile} from "./script";
+import {initMenuMobile, initScrollSuave} from "./script";
 
 export function Header(){
         
@@ -10,15 +10,15 @@ export function Header(){
                 <h2>Healthy Food</h2>
                 <ul className='List'>
                     <li>
-                        <a href="#recipes">HEALTHY RECIPES</a>
+                        <a href="#recipes" onClick={initScrollSuave}>HEALTHY RECIPES</a>
                     </li>
                     <li>
-                        <a href="#blog">
+                        <a href="#blog" onClick={initScrollSuave}>
                             BLOG
                         </a>
                     </li>
                     <li>
-                        <a href="#join">
+                        <a href="#join" onClick={initScrollSuave}>
                             JOIN 
                         </a>
                     </li>
