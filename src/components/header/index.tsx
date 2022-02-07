@@ -32,11 +32,17 @@ export function Header(){
             <div className="divSecundaria"></div>   
             <button className="ButtonMobile" onClick={initMenuMobile}></button>
                 <ul className="ListMobile">
-                    <li>HEALTHY RECIPES</li>
-                    <li>BLOG</li>
-                    <li>JOIN </li>
+                    <li>
+                        <a href="#recipes">HEALTHY RECIPES</a>
+                    </li>
+                    <li>
+                        <a href="#blog">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="#join">Join</a> 
+                    </li>
                     <li className='buttonRegister'>
-                        <a href="/Register">REGISTER</a>
+                        <a className='buttonRegisterLink' href="/Register">REGISTER</a>
                     </li>
                 </ul>
         </ContainerMoile>

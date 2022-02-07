@@ -19,25 +19,32 @@ export function initMenuMobile() {
         }
         function initScrollSuaveMobile(event){
           console.log(linksInternos)
+          ListMobile.classList.remove('active');
+          divSecundaria.classList.remove('active');
+          menuButton.classList.remove('active');
           event.preventDefault();
           const href = event.currentTarget.getAttribute('href');
           const section = document.querySelector(href);
+          
           section.scrollIntoView({
             behavior: 'smooth',
             block: 'start',
           });
         }
-
-        ListNav.addEventListener('click', fecharMenu);
-        divSecundaria.addEventListener('click', ()=>[
-            divSecundaria.classList.remove('active')
-        ]);
+        
+        divSecundaria.addEventListener('click', ()=>{
+            divSecundaria.classList.remove('active');
+            menuButton.classList.remove('active');
+            ListMobile.classList.remove('active');
+            console.log('div')
+      });
         linksInternos.forEach((link) => {
           link.addEventListener('click', initScrollSuaveMobile);
         });
 }
 
 const linksInternos = document.querySelectorAll('.List a[href^="#"]');
+
 export  function initScrollSuave(event) {
  
     console.log(linksInternos)

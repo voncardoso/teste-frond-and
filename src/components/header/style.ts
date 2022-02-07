@@ -259,10 +259,11 @@ export const ContainerMoile = styled.nav`
             a{
                 list-style: none;
                 text-decoration: none;
+                color: #FFFFFF;
             }
             
         }
-        li:hover{
+        a:hover{
             color: rgba(255,255,255, 0.5);
         }
     }
@@ -290,6 +291,9 @@ export const ContainerMoile = styled.nav`
         z-index: 30000;
         list-style: none;
         text-decoration: none;
+    }
+    .buttonRegisterLink{
+        color: #BADC58;
     }
 
     .buttonRegister:hover{
