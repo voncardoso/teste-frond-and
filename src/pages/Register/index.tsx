@@ -1,6 +1,6 @@
 import {Container} from './style'; 
 import { useState } from 'react';
-import {initMenuMobile, mask1} from "./script";
+import {initMenuMobile, maskCPF} from "./script";
 
 import  Modal  from "react-modal";
 import { AiOutlineCheckCircle } from "react-icons/ai";
@@ -170,7 +170,7 @@ export function Register(){
     }
 
    
-  mask1();
+    maskCPF();
 
     return(
       <>
@@ -237,6 +237,7 @@ export function Register(){
                 <ul>
                     <li>
                         <input 
+                        className='CEP'
                             type="number" 
                             placeholder='CEP' 
                             onBlur={OnblueCep}
