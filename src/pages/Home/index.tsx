@@ -15,7 +15,10 @@ import BlocoImg2 from '../../assets/bloco_image_2.svg';
 import BlocoImg3 from '../../assets/bloco_image_3.svg';
 import BlocoImg4 from '../../assets/bloco_image_4.svg';
 import Bloco_final from '../../assets/bloco_final_image.svg';
-
+import perfil from '../../assets/teste.png';
+import perfil1 from '../../assets/teste2.png';
+import perfil2 from '../../assets/teste3.png';
+import perfil3 from '../../assets/teste4.png';
 export function Home(){
     const SearchSeta = document.querySelector('.Search-Seta');
     const ulOverflow = document.querySelector('.ulOverflow');
@@ -126,7 +129,7 @@ export function Home(){
                     <div className="divContainer">
                         <h5>Quick-start guide to nuts and seeds</h5>
                         <div>
-                            <img src={ComigaImg1}  alt="" />
+                            <img src={perfil}  alt="" />
                             <strong>Kevin Ibrahim</strong>
                         </div>
                     </div>
@@ -136,7 +139,7 @@ export function Home(){
                     <div className="divContainer">
                         <h5>Quick-start guide to nuts and seeds</h5>
                         <div>
-                            <img src={ComigaImg1}  alt="" />
+                            <img src={perfil1}  alt="" />
                             <strong>Kevin Ibrahim</strong>
                         </div>
                     </div>
@@ -146,7 +149,7 @@ export function Home(){
                     <div className="divContainer">
                         <h5>Quick-start guide to nuts and seeds</h5>
                         <div>
-                            <img src={ComigaImg1} alt="" />
+                            <img src={perfil2} alt="" />
                             <strong>Kevin Ibrahim</strong>
                         </div>
                     </div>
@@ -156,12 +159,11 @@ export function Home(){
                     <div className="divContainer">
                         <h5>Quick-start guide to nuts and seeds</h5>
                         <div>
-                            <img src={ComigaImg1} alt="" />
+                            <img src={perfil3} alt="" />
                             <strong>Kevin Ibrahim</strong>
                         </div>
                     </div>
                 </li>
-
             </ul>
 
 

@@ -853,7 +853,8 @@ export const OurBlog = styled.section`
                 height: 70px;
                 padding-bottom: 20px;
                   img{
-                      width: 45px;
+                      width: 40px;
+                      height: 40px;
                       border-radius: 100%;
                     }
                   strong{
