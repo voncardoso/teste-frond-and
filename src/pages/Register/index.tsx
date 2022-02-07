@@ -144,7 +144,7 @@ export function Register(){
     function cadUsuario(event: any){
         event.preventDefault();
         const quantCPF = cpf.length;
-        if(quantCPF !== 14){
+        if(quantCPF !== 11){
             alert("CPF incorreto");
             return;
         }
@@ -168,9 +168,6 @@ export function Register(){
             setUF(data.uf);
         });
     }
-
-   
-    maskCPF();
 
     return(
       <>
@@ -196,7 +193,7 @@ export function Register(){
                       
                        <input 
                           
-                          maxLength={14}
+                          maxLength={11}
                           className='CPF'
                           type="text"  
                           placeholder='000.000.000-00'
