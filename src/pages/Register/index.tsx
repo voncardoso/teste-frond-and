@@ -1,6 +1,7 @@
 import {Container} from './style'; 
 import { useState } from 'react';
-import {initMenuMobile} from "./script";
+import {initMenuMobile, mask1} from "./script";
+
 import  Modal  from "react-modal";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { IconContext } from "react-icons";
@@ -132,16 +133,18 @@ export function Register(){
    
     function handleOpenNewModal() {
       setIsNewModalOpen(true);
+      
     }
   
     function handleCloseNewModal(event: any) {
       setIsNewModalOpen(false);
+      
     }
 
     function cadUsuario(event: any){
         event.preventDefault();
         const quantCPF = cpf.length;
-        if(quantCPF !== 11){
+        if(quantCPF !== 14){
             alert("CPF incorreto");
             return;
         }
@@ -166,6 +169,9 @@ export function Register(){
         });
     }
 
+   
+  mask1();
+
     return(
       <>
         <Container>
@@ -187,14 +193,18 @@ export function Register(){
                     </li>
                     <li>
                         <label htmlFor="">CPF</label>
+                      
                        <input 
-                           type="text"  
-                           placeholder='000.000.000-00'
-                           onChange={(event: any)=>{
-                            setCpf(event.target.value)
-                        }}
-                            value={cpf}
-                           required
+                          
+                          maxLength={14}
+                          className='CPF'
+                          type="text"  
+                          placeholder='000.000.000-00'
+                          onChange={(event: any)=>{
+                          setCpf(event.target.value)
+                          }}
+                          value={cpf}
+                          required
                         />
                    </li>
                    <li>
@@ -301,7 +311,6 @@ export function Register(){
                         <AiOutlineCheckCircle color="#BADC58" size={100}/>
                     </div>
                 </IconContext.Provider>
-                
                 <h4>Successfully registered</h4>
             </div>
         </Modal>
