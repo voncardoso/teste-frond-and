@@ -2,7 +2,7 @@ export function initMenuMobile() {
   const SearchSeta = document.querySelector('.Search-Seta');
   const container = document.querySelector('.cookiesContainer');
   const save = document.querySelector('.cookies-save');
-  
+ 
  
 
   SearchSeta.addEventListener('click', ()=>{
@@ -10,7 +10,6 @@ export function initMenuMobile() {
   });
 
   save.addEventListener('click', ()=>{
-    console.log('cookie');
     container.style.display = 'none';
   });
 }

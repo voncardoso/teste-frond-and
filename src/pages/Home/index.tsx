@@ -22,7 +22,7 @@ import perfil3 from '../../assets/teste4.png';
 export function Home(){
     const SearchSeta = document.querySelector('.Search-Seta');
     const ulOverflow = document.querySelector('.ulOverflow');
-  SearchSeta?.addEventListener('click', ()=>{
+    SearchSeta?.addEventListener('click', ()=>{
     SearchSeta?.classList.toggle('active');
     ulOverflow?.classList.add('active');
     
