@@ -1103,6 +1103,7 @@ export const Membership = styled.section`
 export const CookiesContainer = styled.div`
     color:#FFFFFF;
     position: fixed;
+    max-width: 1570px;
     width: 100%;
     bottom: 2rem;
     z-index: 1000;
@@ -1111,7 +1112,9 @@ export const CookiesContainer = styled.div`
     .cookies-content{
         box-shadow: 0 1px 3px rgba(0,0,0, 0.15);
         background: #B9DB58;
-        max-width: 1000px;
+        max-width: 900px;
+        min-width: 200px;
+        width: 100%;
         border-radius: 5px;
         padding: 1rem;
         margin: 0 auto;
@@ -1150,5 +1153,63 @@ export const CookiesContainer = styled.div`
             transform: initial;
             opacity: initial;
         }
+    }
+
+    @media (max-width: 949px){
+        .cookies-content{
+            max-width: 800px;
+            
+        }
+    }
+    @media (max-width: 860px){
+        .cookies-content{
+            max-width: 700px;
+            
+        }
+    }
+    @media (max-width: 743px){
+        .cookies-content{
+            max-width: 600px;
+            
+        }
+    }
+    @media (max-width: 646px){
+        .cookies-content{
+            max-width: 500px;
+        }
+        .cookies-save{
+            border-radius: 5px;
+            color: #B9DB58;
+            padding: 0.6rem 0.8rem;
+    } 
+    }
+
+    @media (max-width: 537px){
+        .cookies-content{
+            max-width: 400px;
+            
+        }
+        .cookies-save{
+            border-radius: 5px;
+            color: #B9DB58;
+            padding: 0px;
+            height: 40px;
+            padding: 0 5px;
+            align-self: center;
+    } 
+
+    @media (max-width: 537px){
+        .cookies-content{
+            max-width: 300px;
+            
+        }
+        .cookies-save{
+            border-radius: 5px;
+            color: #B9DB58;
+            padding: 0px;
+            height: 40px;
+            padding: 0 5px;
+            align-self: center;
+    } 
     }
 `;
