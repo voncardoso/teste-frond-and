@@ -1,7 +1,12 @@
-import {Container} from './style';
-import ImgChefe from '../../assets/Chef-amico 1.png' 
+import {Container} from './style'; 
 import { useState } from 'react';
 import {initMenuMobile} from "./script";
+import  Modal  from "react-modal";
+import { AiOutlineCheckCircle } from "react-icons/ai";
+import { IconContext } from "react-icons";
+import ImgChefe from '../../assets/Chef-amico 1.png'
+
+
 export function Register(){
     const [name, setName] = useState(()=>{
         const storage = localStorage.getItem('name');
@@ -123,8 +128,15 @@ export function Register(){
       }
 
 
-    // estilos
-
+    const [isNewModalOpen, setIsNewModalOpen] = useState(false);
+   
+    function handleOpenNewModal() {
+      setIsNewModalOpen(true);
+    }
+  
+    function handleCloseNewModal(event: any) {
+      setIsNewModalOpen(false);
+    }
 
     function cadUsuario(event: any){
         event.preventDefault();
@@ -155,6 +167,7 @@ export function Register(){
     }
 
     return(
+      <>
         <Container>
             <div className='divRegister'>
                 <h1>Faça seu Cadastro</h1>
@@ -203,14 +216,14 @@ export function Register(){
                                 setEmail(event.target.value)
                             }}
                                 value={email}
-                            placeholder='voncardoso'
+                            placeholder='@exemplo.com'
                             required
                         />
                     </li>
                 </ul>
                 <button className='buttoregisterUser' type='submit'>Proximo</button>
                 </form>
-                <form action="" className='Endereco'>
+                <form className='Endereco' onSubmit={handleOpenNewModal}>
                 <ul>
                     <li>
                         <input 
@@ -269,12 +282,29 @@ export function Register(){
                     </li>
                     </li>
                 </ul>
-                <button className='buttoregisterUser' type='submit'>Register</button>
+                <button className='buttoregisterUser' type='submit' >Register</button>
                 </form>
             </div>
             <div className='imgRegister'>
                 <img src={ImgChefe} alt="" />
             </div>
         </Container>
+           <Modal
+            isOpen={isNewModalOpen}
+            onRequestClose={handleCloseNewModal}
+            overlayClassName="react-modal-overlay-sucesso"
+            className="react-modal-content-sucesso"
+        >
+            <div className="CadastroSucesso">
+                <IconContext.Provider value={{className: "global-class-name" }}>
+                    <div className="teste">
+                        <AiOutlineCheckCircle color="#BADC58" size={100}/>
+                    </div>
+                </IconContext.Provider>
+                
+                <h4>Successfully registered</h4>
+            </div>
+        </Modal>
+        </>
     )
 }
